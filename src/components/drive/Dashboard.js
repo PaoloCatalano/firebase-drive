@@ -23,8 +23,14 @@ export default function Dashboard() {
       <Container fluid>
         <div className="d-flex align-items-center">
           <FolderBreadcrumbs currentFolder={folder} />
-          <AddFileButton currentFolder={folder} />
-          <AddFolderButton currentFolder={folder} />
+          <div className="d-flex  align-items-center flex-column">
+            <AddFileButton currentFolder={folder} />
+            FILE
+          </div>
+          <div className="d-flex  align-items-center flex-column">
+            <AddFolderButton currentFolder={folder} />
+            FOLDER
+          </div>
         </div>
         {childFolders.length > 0 && (
           <div className="d-flex flex-wrap">

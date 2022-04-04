@@ -51,7 +51,7 @@ export default function AddFolderButton({ currentFolder }) {
         onClick={openModal}
         variant="outline-warning"
         size="md"
-        className="mt-3"
+        className="m-2 mt-4"
       >
         <FaFolderPlus style={{ fontSize: "2rem", display: "flex" }} />
       </Button>
@@ -59,7 +59,7 @@ export default function AddFolderButton({ currentFolder }) {
         <Form onSubmit={handleSubmit}>
           <Modal.Body>
             <Form.Group>
-              <Form.Label>Nome Cartella</Form.Label>
+              <Form.Label>Folder Name</Form.Label>
               <Form.Control
                 type="text"
                 required
@@ -72,7 +72,7 @@ export default function AddFolderButton({ currentFolder }) {
           </Modal.Body>
           <Modal.Footer>
             <Button variant="outline-secondary" onClick={closeModal}>
-              Chiudi
+              Close
             </Button>
             <Button variant="success" type="submit" onClick={closeModal}>
               Add

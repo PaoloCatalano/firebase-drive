@@ -24,7 +24,7 @@ export default function Profile() {
     <CenteredContainer>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Il tuo Profilo</h2>
+          <h2 className="text-center mb-4">Your Profile</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <strong>User:</strong> {currentUser.email}
           <Link to="/update-email" className="btn btn-primary w-100 mt-3">
@@ -38,11 +38,11 @@ export default function Profile() {
 
       <Link to="/" style={{ textDecoration: "none" }}>
         <Alert variant="primary" className="w-100 text-center mt-2">
-          Torna alla Dashboard
+          Back to Dashboard
         </Alert>
       </Link>
-      <div className="w-100 text-center mt-2">
-        <Button variant="link" onClick={handleLogout}>
+      <div className="w-100 text-center mt-2 ">
+        <Button variant="link" onClick={handleLogout} className="text-danger">
           Log out
         </Button>
       </div>

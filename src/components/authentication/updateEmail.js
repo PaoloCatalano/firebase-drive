@@ -34,11 +34,11 @@ export default function UpdateProfile() {
     <CenteredContainer>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Aggiorna la tua Email</h2>
+          <h2 className="text-center mb-4">Update your Email</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="email">
-              <Form.Label>Nuova Email</Form.Label>
+              <Form.Label>New Email</Form.Label>
               <Form.Control
                 type="email"
                 ref={emailRef}
@@ -54,7 +54,7 @@ export default function UpdateProfile() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        <Link to="/user">Torna al Profilo</Link>
+        <Link to="/user">Back to Profile</Link>
       </div>
     </CenteredContainer>
   );

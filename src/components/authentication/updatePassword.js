@@ -36,22 +36,22 @@ export default function UpdateProfile() {
     <CenteredContainer>
       <Card>
         <Card.Body>
-          <h2 className="text-center mb-4">Aggiorna la Password</h2>
+          <h2 className="text-center mb-4">Update Password</h2>
           {error && <Alert variant="danger">{error}</Alert>}
           <Form onSubmit={handleSubmit}>
             <Form.Group id="password">
-              <Form.Label>Nuova Password (Almeno 6 caratteri)</Form.Label>
+              <Form.Label>New Password (at least 6 characters)</Form.Label>
               <Form.Control
-                placeholder="Lasciare vuoto per non modificare la password"
+                placeholder="Leave it empty if you don't want to modify it"
                 type="password"
                 ref={passwordRef}
                 className="mb-3"
               />
             </Form.Group>
             <Form.Group id="password-confirm">
-              <Form.Label>Ripeti la password</Form.Label>
+              <Form.Label>Repeat Password</Form.Label>
               <Form.Control
-                placeholder="Lasciare vuoto per non modificare la password"
+                placeholder="Leave it empty if you don't want to modify it"
                 type="password"
                 ref={passwordConfirmRef}
               />
@@ -63,7 +63,7 @@ export default function UpdateProfile() {
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        <Link to="/user">Torna al Profil</Link>
+        <Link to="/user">Back to Profile</Link>
       </div>
     </CenteredContainer>
   );
