@@ -1,6 +1,6 @@
 import Dashboard from "./drive/Dashboard";
 import Login from "./authentication/Login";
-// import Signup from "./authentication/Signup";
+import Signup from "./authentication/Signup";
 import Profile from "./authentication/Profile";
 import PrivateRoute from "./authentication/PrivateRoute";
 import updateEmail from "./authentication/updateEmail";
@@ -23,7 +23,7 @@ function App() {
           <PrivateRoute path="/update-password" component={updatePassword} />
 
           {/* Auth */}
-          {/* <Route path="/signup" component={Signup} /> */}
+          <Route path="/signup" component={Signup} />
           <Route path="/login" component={Login} />
           <Route path="/forgot-password" component={ForgotPassword} />
         </Switch>
